@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+<body>
+  <header class="page-header">
+    <nav class="page-header__navigation navigation">
+      <ul class="navigation__navigation-list visually-hidden">
+        <li class="navigation__menu-item">Главная</li>
+        <li class="navigation__menu-item">Фото и видео</li>
+        <li class="navigation__menu-item">Форма отзыва</li>
+        <li class="navigation__menu-item">html academy</li>
+      </ul>
+      <div class="navigation__cross"></div>
+    </nav>
+    <div class="page-header__top-logo"></div>
+    <div class="page-header__main-logo main-logo">
+      <p class="main-logo__page-title">sedona</p>
+    </div>
+  </header>
+  <form class="feedback">
+    <div class="feedback__header feedback-header">
+      <h2 class="feedback-header__title">
+        Оставьте свой отзыв
+      </h2>
+      <p class="feedback-header__description">
+        Помогите нашим отелям стать лучше!
+        Оставьте отзыв о них, а также о посещенных
+        вами достопримечательностях
+      </p>
+    </div>
+    <div class="feedback__personal-data personal-data">
+      <span class="personal-data__title">Представьтесь</span>
+      <label class="personal-data__name" for="name">Имя</label>
+      <input class="personal-data__name" id="name">
+      <label class="personal-data__name" for="surname">Фамилия</label>
+      <input class="personal-data__name" id="surname">
+      <label class="personal-data__name" for="patronymic">Отчество</label>
+      <input class="personal-data__name" id="patronymic">
+    </div>
+    <div class="feedback__contacts contact-info">
+      <span class="contacts-info__title">Контактная информация:</span>
+      <label class="contact-info__label">Контактный телефон*:</label>
+      <input class="contact-info__input">
+      <img class="contact-info__logo contact-info__logo--phone">
+      <span class="contacts-info__title">Электронная почта</span>
+      <label class="contact-info__label">Электронная почта*:</label>
+      <input class="contact-info__logo contact-info__logo--email">
+    </div>
+    <div class="feedback__impression overall-impression">
+      <span class="overall-impression__title">
+        Ваше общее впечатление
+      </span>
+      <input type="radio" id="rather-good" class="overall-impression__input">
+      <input type="radio" id="rather-bad" class="overall-impression__input">
+      <input type="radio" id="dunno" class="overall-impression__input">
+    </div>
+    <div class="feedback__sights visited-sights">
+      <span class="visited-sights__title">
+        Посещенные достопримечательности
+      </span>
+      <input type="checkbox" class="visited-sights__option" id="devils-bridge">
+      <label for="devils-bridge" class="visited-sights__label">Мост Дьявола</label>
+      <input type="checkbox" class="visited-sights__option" id="slide-park">
+      <label for="slide-park" class="visited-sights__label">Слайд парк</label>
+      <input type="checkbox" class="visited-sights__option" id="bell-mountain">
+      <label for="bell-mountain" class="visited-sights__label">Гора-Колокол</label>
+      <input type="checkbox" class="visited-sights__option" id="red-rocks">
+      <label for="red-rocks" class="visited-sights__label">Красные скалы</label>
+    </div>
+    <div class="emotions">
+      <span class="emotions__title">Опишите свои эмоции:</span>
+      <label class="emotions__label">
+        Опишите подробно все свои восторги
+      </label>
+      <textarea class="emotions__text"></textarea>
+    </div>
+    <input class="feedback__submit button" type="submit">
+  </form>
+  <footer class="page-footer">
+    <div class="page-footer__hashtag">#visitsedona</div>
+    <div class="page-footer__social">
+
+    </div>
+    <div class="page-footer__developed-by">
+      <p class="page-footer__developed-text">Разработано</p>
+      <div class="page-footer__logo"></div>
+    </div>
+  </footer>
+</body>
+</html>
