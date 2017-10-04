@@ -2,69 +2,103 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
 </head>
 <body>
   <header class="page-header">
-    <nav class="page-header__navigation navigation">
-      <ul class="navigation__navigation-list visually-hidden">
-        <li class="navigation__menu-item">Главная</li>
-        <li class="navigation__menu-item">Фото и видео</li>
-        <li class="navigation__menu-item">Форма отзыва</li>
-        <li class="navigation__menu-item">html academy</li>
-      </ul>
-      <div class="navigation__cross"></div>
-    </nav>
-    <div class="page-header__top-logo"></div>
-    <div class="page-header__main-logo main-logo">
-      <p class="main-logo__page-title">sedona</p>
+    <div class="wrapper">
+      <nav class="main-nav">
+        <ul class="main-nav__list visually-hidden">
+          <li class="main-nav__item">
+            <a href="#">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">html academy</a>
+          </li>
+        </ul>
+        <button type="button" class="main-nav__toggle"></button>
+      </nav>
+      <a href="#" class="page-header__logo"></a>
     </div>
   </header>
   <main>
-    <h1 class="page-title">Фото и видео</h1>
-    <p class="page-description">
-      Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
-    </p>
+    <section class="page-description">
+      <h1 class="page-description__title">
+        Фото и видео
+      </h1>
+      <p class="page-description__subtitle">
+        Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+      </p>
+    </section>
     <section class="photos">
-      <div class="photos__item photo">
-        <img class="photo__picture">
-        <div class="photo__name">Неродные просторы</div>
-        <div class="photo__author">Борис</div>
-        <div class="photo__likes">1350</div>
-      </div>
-      <div class="photos__item photo">
-        <img class="photo__picture">
-        <div class="photo__name">Местная растительность</div>
-        <div class="photo__author">Сергей</div>
-        <div class="photo__likes">143</div>
-      </div>
-      <div class="photos__item photo">
-        <img class="photo__picture">
-        <div class="photo__name">Дорога на север</div>
-        <div class="photo__author">Петр</div>
-        <div class="photo__likes">96</div>
-      </div>
-      <div class="photos__item photo">
-        <img class="photo__picture">
-        <div class="photo__name">Мост дьявола</div>
-        <div class="photo__author">Антон</div>
-        <div class="photo__likes">254</div>
-      </div>
-      <div class="photos__item photo">
-        <div class="photo__title"></div>
-        <video class="photo__video"></video>
-      </div>
+      <article class="photos__item photo">
+        <img class="photo__picture" src="">
+        <h1 class="photo__title">Неродные просторы</h1>
+        <p class="photo__author">Автор фото: Борис</p>
+        <div class="photo__likes like">
+          <button class="like__button"></button>
+          <span class="like__count">1350</span>
+        </div>
+      </article>
+      <article class="photos__item photo">
+        <img class="photo__picture" src="">
+        <h1 class="photo__title">Местная растительность</h1>
+        <p class="photo__author">Автор фото: Сергей</p>
+        <div class="photo__likes like">
+          <button class="like__button"></button>
+          <span class="like__count">143</span>
+        </div>
+      </article>
+      <article class="photos__item photo">
+        <img class="photo__picture" src="">
+        <h1 class="photo__title">Дорога на север</h1>
+        <p class="photo__author">Автор фото: Петр</p>
+        <div class="photo__likes like">
+          <button class="like__button"></button>
+          <span class="like__count">96</span>
+        </div>
+      </article>
+      <article class="photos__item photo">
+        <img class="photo__picture" src="">
+        <h1 class="photo__title">Мост дьявола</h1>
+        <p class="photo__author">Автор фото: Антон</p>
+        <div class="photo__likes like">
+          <button class="like__button"></button>
+          <span class="like__count">254</span>
+        </div>
+      </article>
+    </section>
+    <section class="video">
+      <p class="video__text">
+        <strong class="video__header">Все еще сомневаетесь?</strong>
+        Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+      </p>
+      <video class="video__player player">
+        <div class="player__bar-background"></div>
+        <div class="player__bar"></div>
+        <div class="player__fetch"></div>
+        <button type="button" class="player__from-the-beginning"></button>
+      </video>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__hashtag">#visitsedona</div>
-    <div class="page-footer__social">
-
+    <p class="page-footer__hashtag">#visitsedona</p>
+    <div class="page-footer__social-list social-list">
+      <a href="#" class="social-list__item social-list__item--twitter"></a>
+      <a href="#" class="social-list__item social-list__item--facebook"></a>
+      <a href="#" class="social-list__item social-list__item--youtube"></a>
     </div>
-    <div class="page-footer__developed-by">
-      <p class="page-footer__developed-text">Разработано</p>
-      <div class="page-footer__logo"></div>
-    </div>
+    <p class="page-footer__copyright">
+      <span class="page-footer__developed">Разработано</span>
+      <a href="#" class="page-footer__logo"></a>
+    </p>
   </footer>
 </body>
 </html>
